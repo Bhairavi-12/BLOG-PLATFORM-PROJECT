@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, 
+                   maximum-scale=1, minimum-scale=1,  
+                   width=device-width"> 
+    <!-- CSS file linked -->
+    <link rel="stylesheet" href="style.css"> 
+    <title>My Blog </title> 
+</head> 
+  
+<body> 
+    <header> 
+        <!-- <h1 class="logo"><img src="assets/img/blog logo.webp" /></h1>  -->
+        <nav> 
+            <ul> 
+                <li class="nav1"><a href="/">Home</a></li> 
+                <li class="nav1"> 
+                      <a href="#" id="createPostBtn"> 
+                          Create Post 
+                      </a> 
+                  </li> 
+                  <li class="nav1"><a href="#latest">Latest</a></li>
+                <li class="nav1"><a href="#contact">Contact</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+  
+    <main class="post-container"> 
+        <div id="createPostModal" class="modal"> 
+            <div class="modal-content"> 
+                <span class="close" id="closeModal">×</span> 
+                <h2>Create a New Post</h2> 
+                <form id="postForm"> 
+                    <div class="upper"> 
+                        <div class="title"> 
+                            <label class="postheading" for="postTitle"> 
+                                  Title 
+                              </label> 
+                            <input type="text" class="postTitle"
+                             id="postTitle" name="postTitle"
+                              autocomplete="off" required> 
+                        </div> 
+                        <div class="category1"> 
+                            <label class="postheading" for="postCategory"> 
+                                  Category 
+                              </label> 
+                            <input type="text" class="postCategory"
+                             id="postCategory" name="postCategory" 
+                             autocomplete="off" required> 
+                        </div> 
+                    </div> 
+  
+                    <label class="postheading" for="postDescription"> 
+                          Description 
+                      </label> 
+                    <textarea class="postDescription" id="postDescription" 
+                               name="postDescription" autocomplete="off" 
+                               required> 
+                      </textarea> 
+  
+                    <button type="submit" id="postSubmitBtn" 
+                    class="postSubmitBtn">Post</button> 
+                </form> 
+            </div> 
+        </div> 
+  
+        <!-- Detail Modal -->
+        <div id="postDetailModal" class="modal"> 
+            <div class="modal-content"> 
+                <span class="close" id="closeDetailModal"> 
+                      × 
+                  </span> 
+                <h1 id="detailTitle"></h1> 
+                <span id="detailDate"></span> 
+                <p id="detailDescription"></p> 
+            </div> 
+        </div> 
+  
+        <div id="postCreatedMessage" class="post-message"> 
+            Post created successfully! 
+          </div> 
+        </main> 
+
+        <!-- Latest stories start -->
+<section id="latest">
+	<div class="container" style="text-align:center;">
+		<h3>Latest stories</h3>
+		<br>
+		
+		<div class="box-2">
+			<img src="assets/img/image05.jpg" class="b-img-1">
+			<h3 class="heading1">Entertainment</h3>
+				<p class="blog-heading-1">Entertainment good for health</p>
+				<p class="text">Binge-watch a hidden gem series.Learn a new magic trick to impress.</p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+		<div class="box-2">
+			<img src="assets/img/image06a.jpg" class="b-img-1">
+			<h3 class="heading1">Animals</h3>
+				<p class="blog-heading-1">Every Life Deserves Respect</p>
+				<p class="text">Visit a local animal shelter and volunteer. Build a DIY bird feeder for your backyard.</p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+		<div class="box-2">
+			<img src="assets/img/images07.jpeg" class="b-img-1">
+			<h3 class="heading1">Lifestyle</h3>
+				<p class="blog-heading-1">Lifestyle, Satisfies The Need</p>
+				<p class="text">Try a new recipe from a different culture. Take a virtual tour of a famous museum.</p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+		
+		<div class="clearfix"></div>
+
+		<div class="box-2">
+			<img src="assets/img/image08.jpeg" class="b-img-1">
+			<h3 class="heading1">Fun</h3>
+				<p class="blog-heading-1">Fun is the best way to be happy.</p>
+				<p class="text">Plan a themed game night with friends. Go stargazing on a clear night.</p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+		<div class="box-2">
+			<img src="assets/img/image09.webp" class="b-img-1">
+			<h3 class="heading1">Games</h3>
+				<p class="blog-heading-1">Good Food Good Health</p>
+				<p class="text">Dust off a classic board game for family time. Download a new mobile game for quick fun.</p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+		<div class="box-2">
+			<img src="assets/img/images10.jpeg" class="b-img-1">
+			<h3 class="heading1">Beauty & Fashion</h3>
+				<p class="blog-heading-1">Fashion is a trend.</p>
+				<p class="text">Pamper yourself with a DIY spa night. Experiment with a bold new makeup look.</p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+        <div class="box-2">
+			<img src="assets/img/image11.jpeg" class="b-img-1">
+			<h3 class="heading1">Home</h3>
+				<p class="blog-heading-1">Making your home.</p>
+				<p class="text">Rearrange furniture for a fresh living space. Start a small indoor herb garden.</p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+        <div class="box-2">
+			<img src="assets/img/image12.jpg" class="b-img-1">
+			<h3 class="heading1">Fitness</h3>
+				<p class="blog-heading-1">Fitness is not a destination.</p>
+				<p class="text">Follow a free online workout video at home. Go for a brisk walk or jog in nature.</p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+		<div class="clearfix"></div>
+	</div>
+</section>
+<!--  latest stories end-->
+  
+
+
+<!-- Contact start -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div>
+            <label for="name">Name: Bhairavi Kelwadkar</label>
+        </div>
+        <div>
+            <label for="email">Email: example@gmail.com</label>
+        </div>
+        <div>
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+    <div id="successMessage" class="hidden">Your message has been sent!</div>
+</section>
+<!-- Contact end -->
+
+
+    <!-- JavaScript file linked -->
+    <script src="script.js"></script> 
+</body> 
+  
+</html>
